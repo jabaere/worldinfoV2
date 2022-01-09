@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:ital@1&family=Righteous&display=swap');
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  padding: 0;
+  margin: 0;
+}
+h1 {
+  text-align: center;
+  color: black(255, 0, 0, 0.745);
+  padding-top: 20px;
+  font-size: 35px;
+}
+.center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 20px auto;
+}
+
+#loading {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+  object-position: 50% 50%;
+  margin-top: 20px;
+}
+#toggle-img {
+  width: 24px;
+  height: 25px;
+}
+#root {
+  width: 99%;
+  margin: 0 auto;
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 1%;
+  border-radius: 6px;
+}
+
+#header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: radial-gradient(circle at 0 0, #363537, #2c5364 90px);
+  width: 95.5%;
+  align-items: first baseline;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+
+  border-bottom: 3px solid;
+  border-image: linear-gradient(to right, #82f302, rgba(233, 229, 7, 0)) 100% 0%;
+  margin: 0 auto;
+}
+#title,
+#toggle {
+  padding: 15px;
+  font-family: "New Tegomin", serif;
+}
+#title h1 {
+  color: white;
+}
+#toggle {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+#bottom-header {
+  display: flex;
+  justify-content: space-between;
+  background: radial-gradient(circle at 100% 100%, #363537, #203a43 90px);
+  padding-top: 20px;
+  padding-bottom: 10px;
+  width: 95.5%;
+  margin: 0 auto;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  font-family: "New Tegomin", serif;
+}
+
+#night {
+  cursor: pointer;
+}
+
+#Continents {
+  height: 35px;
+  border-radius: 4px;
+  border: 1px solid aqua;
+  text-align: center;
+  font-family: "New Tegomin", serif;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+#search {
+  width: 300px;
+  margin-left: 15px;
+  height: 35px;
+  border-radius: 4px;
+  border: aqua;
+  text-align: center;
+  font-family: "New Tegomin", serif;
+}
+#select {
+  margin-right: 30px;
+}
+#countries {
+  padding: 25px;
+  width: 100%;
+  height: auto;
+  height: 100vh;
+}
+.card {
+  margin-bottom: 15px;
+  height: 100px;
+}
+
+ul {
+  margin-bottom: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100px;
+}
+#all-country-li {
+  list-style-type: none;
+
+  border: 1px solid black;
+  margin: 5px;
+  box-sizing: border-box;
+  width: 100%;
+  flex: 20%;
+  border-radius: 6px;
+}
+img {
+  width: 100%;
+  height: 160px;
+  object-position: 50% 50%;
+  border-radius: 6px;
+  
+  cursor: pointer;
+}
+h3,
+p {
+  padding: 10px;
+  width: auto;
+}
+p{
+  
+  font-family: 'Red Hat Mono', monospace;
+}
+span{
+  font-family: 'Righteous', cursive;
+
+}
+h2, h3{
+  font-family: 'Righteous', cursive;
+  letter-spacing: 2px;
+}
+h3 {
+  cursor: pointer;
+  width: auto;
+  color:chocolate;
+}
+.individual-card {
+  background-color: inherit;
+  height: 100vh;
+  padding-top: 30px;
+  padding-left: 20px;
+}
+#individual-card{
+  display: flex;
+  margin-top: 15px;
+  justify-content: space-around;
+}
+#individual-li {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
+  box-sizing: border-box;
+  padding-left: 18.5px;
+  border-radius: 6px;
+}
+#individual-country-info {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+#individual-img {
+  width: 85vw;
+  object-position: 0%;
+  border-radius: 6px;
+  object-fit: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.border {
+  display: flex;
+  text-align: center;
+  width: 20%;
+  align-items: baseline;
+  flex-direction: column;
+}
+#border {
+  margin: 10px;
+  width: 65%;
+  height: 8%;
+  border: 1px solid black;
+  background-color: #f0eb03ab;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.titleText {
+  font-weight: bold;
+  font-size: 15px;
+  text-align: justify;
+  width: 250px;
+}
+button {
+  width: 100%;
+  text-align: center;
+  height: 25px;
+  border-radius: 4px;
+  border: none;
+  color: black;
+  background-color: rgb(246, 214, 2);
+  cursor: pointer;
+  margin-top: 15px;
+}
+button:hover {
+  background-color: #f0eb03ab;
+  color: black;
+
+  border: 1px solid #f0eb03ab;
+}
+#search-country {
+  width: 50%;
+
+  margin: 0 auto;
+  margin-top: 20px;
+}
+#search-country-img {
+  height: 350px;
+}
+#ind-image {
+  max-width: 100%;
+  height: 100%;
+  object-position: 50% 50%;
+  border-radius: 6px;
+  object-fit: unset;
+  cursor: pointer;
+  inline-size: auto;
+}
+#countryTittle{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  #bottom-header {
+    display: flex;
+    flex-direction: column;
+
+    padding: 5px;
+    width: 95.5%;
+  }
+  #individual-li {
+    padding-left: 2px;
+  }
+  #search {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    border-radius: 2px;
+  }
+  #Continents {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 5px;
+  }
+  #select {
+    margin-right: 0;
+  }
+  #countries {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+  ul {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 100px;
+  }
+  .individual-card {
+    width: 90%;
+  }
+  #individual-card{
+    display: flex;
+    flex-direction: column;
+  }
+  #search-country {
+    width: 95.5%;
+  }
+  .individual-card {
+    margin: 0 auto;
+    width: 90%;
+  }
+  .card {
+    width: 95.5%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  img {
+    height: auto;
+    width: 100%;
+  }
+  .border {
+    display: flex;
+    flex-direction: row;
+  }
+  #all-country-li {
+    width: 95.5%;
+    margin: 0 auto;
+    margin-top: 0px;
+    margin-top: 10px;
+  }
+}
+@media only screen and (min-width: 1026px) {
+  #individual-li {
+    padding-left: 24px;
+  }
+}
+@media only screen and (min-width: 769px) {
+  #individual-img {
+    width: auto;
+  }
+
+}
