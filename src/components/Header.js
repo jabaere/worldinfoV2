@@ -72,7 +72,7 @@ export default function Header() {
         <Link
           to="/"
           onClick={() => {
-            // localStorage.setItem("region", "all")
+            localStorage.setItem("region", "all")
             return handleSetRegion("all");
           }}
         >

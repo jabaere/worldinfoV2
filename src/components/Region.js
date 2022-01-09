@@ -10,23 +10,29 @@ export default function Region() {
   const { region, handleClickCountry } = useContext(AppContext);
  
   useEffect(() => {
-    const region = localStorage.getItem("region") || 'Oceania';
-    
-    async function fetchData() {
-     await  fetch("https://restcountries.com/v3.1/region/" + region)
+    const region2 = localStorage.getItem("region") || "all";
+
+     function regionData() {
+     fetch("https://restcountries.com/v3.1/region/" + region2)
       .then((res) => res.json())
       .then((data) => {
-        if(region !== 'all'){
+        
           setData(data);
           setIsLoading(true);
-        }else{
-          setData([]);
-        }
-        
         //setRegion(region)
       });
     }
-    fetchData()
+    function getAllData(){
+      fetch("https://restcountries.com/v3.1/all")
+      .then((res) => res.json())
+      .then((data) => {
+        setData(data);
+        setIsLoading(true);
+        // console.log(data)
+      });
+    }
+
+    region2 === 'all' ? getAllData() : regionData()
   }, [region]);
 
   const indexHandler = (event) => {
