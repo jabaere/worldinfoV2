@@ -102,7 +102,7 @@ export default function Header() {
           />
         </section>
         <section id="select">
-          <select name="Continents" id="Continents" defaultValue={"DEFAULT"}>
+          <select name="Continents" id="Continents" defaultValue={"DEFAULT"} onChange={(e) => handleSelect(e)}>
             <option value="DEFAULT" disabled hidden>
               Filter By Region
             </option>
