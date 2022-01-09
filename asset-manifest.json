@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/worldinfoV2/static/css/main.2a6b565e.css",
-    "main.js": "/worldinfoV2/static/js/main.76d38ca2.js",
+    "main.js": "/worldinfoV2/static/js/main.25176971.js",
     "static/js/787.ac61a1c2.chunk.js": "/worldinfoV2/static/js/787.ac61a1c2.chunk.js",
     "index.html": "/worldinfoV2/index.html",
     "main.2a6b565e.css.map": "/worldinfoV2/static/css/main.2a6b565e.css.map",
-    "main.76d38ca2.js.map": "/worldinfoV2/static/js/main.76d38ca2.js.map",
+    "main.25176971.js.map": "/worldinfoV2/static/js/main.25176971.js.map",
     "787.ac61a1c2.chunk.js.map": "/worldinfoV2/static/js/787.ac61a1c2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2a6b565e.css",
-    "static/js/main.76d38ca2.js"
+    "static/js/main.25176971.js"
   ]
 }
